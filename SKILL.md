@@ -23,8 +23,7 @@ Use this skill when old local Codex sessions still exist under `~/.codex`, but t
 
 - Sessions are visible by `codex resume <id>` but hidden from App lists
 - You switched between `auth_mode="chatgpt"` and API-key login
-- In this environment, `auth_mode="chatgpt"` maps to `model_provider="openai"`
-- In this environment, API-key login maps to `model_provider="newapi"`
+- The script probes the current login state instead of relying on a hardcoded provider mapping
 
 ## Workflow
 
@@ -53,13 +52,13 @@ python3 session-visibility-repair/scripts/migrate_session_visibility.py --report
 - Restrict to one workspace:
 
 ```bash
-python3 session-visibility-repair/scripts/migrate_session_visibility.py --workspace-root /Volumes/ext-ssd/dev-zone/lecture-video-convert
+python3 session-visibility-repair/scripts/migrate_session_visibility.py --workspace-root /path/to/workspace
 ```
 
 - Restrict to a single thread:
 
 ```bash
-python3 session-visibility-repair/scripts/migrate_session_visibility.py --thread-id 019d9bbb-7212-7900-830c-698b02ae84cb
+python3 session-visibility-repair/scripts/migrate_session_visibility.py --thread-id <thread-id>
 ```
 
 - Preview only:
