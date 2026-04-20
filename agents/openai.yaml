@@ -1,0 +1,5 @@
+version: 1
+interface:
+  display_name: Session Visibility Repair
+  short_description: Restore hidden local Codex sessions after login or provider switches.
+  default_prompt: Repair local Codex session visibility after a login or provider switch.
