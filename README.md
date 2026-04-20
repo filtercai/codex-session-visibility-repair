@@ -1,4 +1,4 @@
-# Session Visibility Repair
+# Codex Session Visibility Repair
 
 English: A small Codex skill and helper script for repairing invisible local Codex sessions after switching login mode or model provider.
 
